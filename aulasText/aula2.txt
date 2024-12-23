@@ -1,3 +1,0 @@
-        // Anotações das Aulas de JavaScript \\
-
-    -- Aula 2 - JavaScript: como chegamos até aqui? --
