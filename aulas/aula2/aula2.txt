@@ -1,0 +1,5 @@
+        // Anotações das Aulas de JavaScript \\
+
+    -- Aula 2 - JavaScript: como chegamos até aqui? --
+
+Durante a guerra fria utilizavam a Arpanet, que, aos poucos foi se tornando a Internet.
