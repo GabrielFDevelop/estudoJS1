@@ -20,9 +20,6 @@ Só se aprende a programar, praticando! E normalmente pra quem está iniciando, 
 Não, não existe idade mínima ou máxima para qualquer tipo de aprendizado no mundo.
 
 
-
-
-
 * Livros recomendados: 'JavaScript: O guia definitivo' por David Flanagan e 
 'JavaScript:Guia do programador.' por Maujor. Além das referências da Mozilla(developer.mozilla.org) e 
 ECMA(ecma-international.org). *
@@ -47,8 +44,6 @@ Ao utilizar 'html:5' o próprio vscode irá criar um código HTML5.
 
 Nesta aula será ensinado como 'guardar' os dados para que possamos utilizá-los mais pra frente. -->
 
-<!-- 
-
 Durante a aula, ele cita um exemplo de estacionamento com vagas a1(para carros normais), c1(para caminhões) e m1(para motos).
 Usando esse exemplo pra explicar sobre variáveis ele nos mostra o seguinte:
 
@@ -70,10 +65,6 @@ Caso queira deixar a vaga sem carro nenhum, seria assim:
 
 vaga a1 = null;
 
--->
-
-<!--
-
 Nos computadores também têm essas 'vagas', mas elas estão em um 'terreno' que seria a memória do computador. E assim como foi 
 feito nos terrenos, é preciso ter espaços delimitados para receber os dados. Esses espaços seriam as variáveis, que podemos 
 representar com 'var' ou 'let'(let é mais utilizado no mais moderno). Essas vagas(variáveis) precisam de um 
@@ -92,7 +83,6 @@ s3 = `Guanabara`;
 Os identificadores(nomes de variável) podem começar com uma letra, $ ou _. Não podem começar com números. É possível utilizar 
 letras e números. É possivel utilizar acentos e símbolos. Não podem conter espaços. Não podem ser palavras reservadas.
 
---> 
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
     -- Aula 6 - Tratamento de Dados --
