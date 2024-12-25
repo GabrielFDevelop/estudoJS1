@@ -1,0 +1,100 @@
+        // Anotações das Aulas de JavaScript \\
+
+    -- Aula 1 - O que o JavaScript é capaz de fazer? --
+
+Um Website é formado normalmente por 3 tecnologias: HTML, CSS e JavaScript. Nos quais o HTML se trata do conteúdo, o CSS se trata da estilização deste conteúdo e o JavaScript se trata da interação do conteúdo.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 2 - JavaScript: como chegamos até aqui? --
+
+Durante a guerra fria utilizavam a Arpanet, que, aos poucos foi se tornando a Internet.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 3 - Dando os primeiros passos --
+
+Só se aprende a programar, praticando! E normalmente pra quem está iniciando, surgem algumas dúvidas: 
+
+-"sou velho/novo demais pra programar?"
+Não, não existe idade mínima ou máxima para qualquer tipo de aprendizado no mundo.
+
+
+
+
+
+* Livros recomendados: 'JavaScript: O guia definitivo' por David Flanagan e 
+'JavaScript:Guia do programador.' por Maujor. Além das referências da Mozilla(developer.mozilla.org) e 
+ECMA(ecma-international.org). *
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 4 - Criando seu primeiro script --
+
+Ao utilizar 'html:5' o próprio vscode irá criar um código HTML5. -->
+
+LINHA 30 ATÉ 33:
+        confirm('Está gostando de JS?');/* Os botões 'ok' quanto 'cancelar' não me retornam nada, pra onde vão os dados? 
+        - esse dado simplesmente se perdeu, pois não havia onde guardá-lo.*/
+        prompt('Qual seu nome?');/* Apesar de ter digitado e confirmado, pra onde vai o dado inserido? 
+        - esse dado simplesmente se perdeu, pois não havia onde guardá-lo.*/
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 5 - Variáveis e Tipos Primitivos --
+
+Ao utilizar 'html:5' o próprio vscode irá criar um código HTML5.
+
+Nesta aula será ensinado como 'guardar' os dados para que possamos utilizá-los mais pra frente. -->
+
+<!-- 
+
+Durante a aula, ele cita um exemplo de estacionamento com vagas a1(para carros normais), c1(para caminhões) e m1(para motos).
+Usando esse exemplo pra explicar sobre variáveis ele nos mostra o seguinte:
+
+--------------------------------------------------IMPORTANTE------------------------------------------------------
+
+Nunca leia o sinal '=' como igual, e sim como recebe.Por exemplo: 'vaga a1 = carro1;' vaga a1 recebe carro1.
+
+------------------------------------------------------------------------------------------------------------------
+
+Ele colocar um carro na vaga a1:
+
+vaga a1 = carro1;
+
+Após isso ele quer colocar outro carro nela, mas precisa tirar o 'carro1' da vaga, ficando assim:
+
+vaga a1 = carro2;
+
+Caso queira deixar a vaga sem carro nenhum, seria assim:
+
+vaga a1 = null;
+
+-->
+
+<!--
+
+Nos computadores também têm essas 'vagas', mas elas estão em um 'terreno' que seria a memória do computador. E assim como foi 
+feito nos terrenos, é preciso ter espaços delimitados para receber os dados. Esses espaços seriam as variáveis, que podemos 
+representar com 'var' ou 'let'(let é mais utilizado no mais moderno). Essas vagas(variáveis) precisam de um 
+identificador(nome da variável) e também precisamos atribuir valores a elas, sendo: 'n1 = 5', 'n2 = 8.5', 'n3 = 15'. Ficando assim:
+
+let n1 = 5;
+let n2 = 8.5;
+let n3 = 15;
+
+É possível criar variáveis com tamanhos diferentes, para receber dados com tamanhos maiores ou menores. Por exemplo:
+
+s1 = "JavaScript";
+s2 = 'CursoEmVideo';
+s3 = `Guanabara`;
+
+Os identificadores(nomes de variável) podem começar com uma letra, $ ou _. Não podem começar com números. É possível utilizar 
+letras e números. É possivel utilizar acentos e símbolos. Não podem conter espaços. Não podem ser palavras reservadas.
+
+--> 
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 6 - Tratamento de Dados --
+
+Ao utilizar 'html:5' o próprio vscode irá criar um código HTML5.
