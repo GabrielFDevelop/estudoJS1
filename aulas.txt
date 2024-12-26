@@ -87,4 +87,4 @@ ________________________________________________________________________________
 
     -- Aula 6 - Tratamento de Dados --
 
-Ao utilizar 'html:5' o próprio vscode irá criar um código HTML5.
+Nessa aula começaremos a trabalhar também a manipulação de dados na Linguagem JavaScript.
