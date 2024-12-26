@@ -1,0 +1,316 @@
+        // Anotações das Aulas de JavaScript \\
+
+    -- Aula 1 - O que o JavaScript é capaz de fazer? --
+
+Um Website é formado normalmente por 3 tecnologias: HTML, CSS e JavaScript. Nos quais o HTML se trata do conteúdo, o CSS se trata da estilização deste conteúdo e o JavaScript se trata da interação do conteúdo.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 2 - JavaScript: como chegamos até aqui? --
+
+Durante a guerra fria utilizavam a Arpanet, que, aos poucos foi se tornando a Internet.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 3 - Dando os primeiros passos --
+
+Só se aprende a programar, praticando! E normalmente pra quem está iniciando, surgem algumas dúvidas: 
+
+-"sou velho/novo demais pra programar?"
+Não, não existe idade mínima ou máxima para qualquer tipo de aprendizado no mundo.
+
+
+* Livros recomendados: 'JavaScript: O guia definitivo' por David Flanagan e 
+'JavaScript:Guia do programador.' por Maujor. Além das referências da Mozilla(developer.mozilla.org) e 
+ECMA(ecma-international.org). *
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 4 - Criando seu primeiro script --
+
+Ao utilizar 'html:5' o próprio vscode irá criar um código HTML5. -->
+
+LINHA 30 ATÉ 33:
+        confirm('Está gostando de JS?');/* Os botões 'ok' quanto 'cancelar' não me retornam nada, pra onde vão os dados? 
+        - esse dado simplesmente se perdeu, pois não havia onde guardá-lo.*/
+        prompt('Qual seu nome?');/* Apesar de ter digitado e confirmado, pra onde vai o dado inserido? 
+        - esse dado simplesmente se perdeu, pois não havia onde guardá-lo.*/
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 5 - Variáveis e Tipos Primitivos --
+
+Ao utilizar 'html:5' o próprio vscode irá criar um código HTML5.
+
+Nesta aula será ensinado como 'guardar' os dados para que possamos utilizá-los mais pra frente. -->
+
+Durante a aula, ele cita um exemplo de estacionamento com vagas a1(para carros normais), c1(para caminhões) e m1(para motos).
+Usando esse exemplo pra explicar sobre variáveis ele nos mostra o seguinte:
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<IMPORTANTE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Nunca leia o sinal '=' como igual, e sim como recebe.Por exemplo: 'vaga a1 = carro1;' vaga a1 recebe carro1.
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Ele colocar um carro na vaga a1:
+
+vaga a1 = carro1;
+
+Após isso ele quer colocar outro carro nela, mas precisa tirar o 'carro1' da vaga, ficando assim:
+
+vaga a1 = carro2;
+
+Caso queira deixar a vaga sem carro nenhum, seria assim:
+
+vaga a1 = null;
+
+Nos computadores também têm essas 'vagas', mas elas estão em um 'terreno' que seria a memória do computador. E assim como foi 
+feito nos terrenos, é preciso ter espaços delimitados para receber os dados. Esses espaços seriam as variáveis, que podemos 
+representar com 'var' ou 'let'(let é mais utilizado no mais moderno). Essas vagas(variáveis) precisam de um 
+identificador(nome da variável) e também precisamos atribuir valores a elas, sendo: 'n1 = 5', 'n2 = 8.5', 'n3 = 15'. Ficando assim:
+
+let n1 = 5;
+let n2 = 8.5;
+let n3 = 15;
+
+É possível criar variáveis com tamanhos diferentes, para receber dados com tamanhos maiores ou menores. Por exemplo:
+
+s1 = "JavaScript";
+s2 = 'CursoEmVideo';
+s3 = `Guanabara`;
+
+Os identificadores(nomes de variável) podem começar com uma letra, $ ou _. Não podem começar com números. É possível utilizar 
+letras e números. É possivel utilizar acentos e símbolos. Não podem conter espaços. Não podem ser palavras reservadas.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>estudoJS1</title>
+    <style>
+        body{
+            background-color: darkblue;
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+    <script>
+        alert('Minha primeira mensagem!');
+        confirm('Está gostando de JS?');
+        prompt('Qual seu nome?');
+    </script>
+</body>
+</html> 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 6 - Tratamento de Dados -- Parte 1
+
+Nessa aula começaremos a trabalhar também a manipulação de dados na Linguagem JavaScript.
+
+Em JavaScript temos vários tipos primitivos que podem ser:
+-string;
+-number;
+-boolean;
+-null;
+-undefined;
+-object;
+-function;
+
+Mas tem alguns que são considerados principais: 'string', 'number' e 'boolean'.
+
+E nesta aula iremos tratar principalmente de: 'string' e 'number'.
+
+Manipularemos e criaremos o 'prompt' criado na linha 25. Iremos criar uma variável para receber o dado inserido no 'prompt' que
+ficou assim:
+
+        let nome = prompt('Qual seu nome?');
+
+Dessa forma a variável nome recebe o valor inserido no prompt(que transmite ao usuário a mensagem 'Qual seu nome?'). Assim terei
+'nome' como uma variável, e todo dado inserido no 'prompt' será guardado na variável 'nome'.
+
+Criaremos um 'alert' para exibir uma mensagem ao usuário após ele apresentar seu nome. E ficará assim:
+
+        alert('Prazer em te conhecer,' + nome + '!');
+
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<IMPORTANTE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Normalmente em HTML, CSS e JavaScript temos que comentar de formas diferentes:
+
+-HTML: <!--    -->
+-CSS: /*   */
+-JavaScript: //     e     /*   */
+
+E o símbolo '+' em JavaScript significa concatenação.
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>estudoJS1</title>
+    <style>
+        body{
+            background-color: darkblue;
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+    <script>
+        let nome = prompt('Qual seu nome?');
+        alert('Prazer em te conhecer,' + nome + '!');
+    </script>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    -- Aula 6 - Tratamento de Dados -- Parte 2
+
+Nesta parte da aula, precisaremos que a pessoa digite 2 números, e precisaremos de 2 'prompt'. Para isso criaremos 2 variáveis:
+        let n1 = prompt('Digite o primeiro número');
+        let n2 = prompt('Digite o segundo número');
+
+Após, criaremos também, uma variável que fará a soma dos valores das outras 2:
+        let s = n1 + n2;
+
+Mas não irá funcionar por conta do '+' que também serve para concatenação do código. Então como dizer pro código que n1 e n2 
+são números? Teremos de converter essas variáveis de string para número utilizando o 'Number.parseInt(n)' ou
+ o 'Number.parseFloat' para números reais e não inteiros. Podendo transformá-los diretamente, que ficaria assim:
+        let n1 = Number.parseInt(prompt('Digite o primeiro número'));
+        let n2 = parseInt(prompt('Digite o segundo número'));
+
+Ou para caso eu queira aque seja real:
+        let n1 = Number.parseFloat(prompt('Digite o primeiro número'));
+        let n2 = parseFloat(prompt('Digite o segundo número'));
+
+Também podemos deixar como se quiséssemos que o JavaScript decida se será real ou inteiro, esta é uma forma de ser feito que
+foi implementada mais recentemente, facilitando para os desenvolvedores, e ficaria assim:
+        let n1 = Number(prompt('Digite o primeiro número'));
+        let n2 = Number(prompt('Digite o segundo número'));
+
+Se quiser também é possível transformar um 'number' em 'string', utilizando 'String("o que deseja transformar em string")' ou 
+'"o que deseja transformar em string".toString()', das seguintes formas:
+        let n1 = String(prompt('Digite o primeiro número'));
+        let n2 = prompt('Digite o segundo número').toString();
+
+Também há várias formar de formatar um string:
+
+let s = 'JavaScript';
+-'Estou aprendendo s'; //não faz interpolação
+-'Estou aprendendo' + s; //utiliza concatenação
+-`Estou aprendendo ${s}`; //utiliza template string(forma mais recente e prática)
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<IMPORTANTE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+O 'prompt' por padrão te retornará uma string.
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>estudoJS1</title>
+    <style>
+        body{
+            background-color: darkblue;
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá mundo!</h1>
+    <p>Já me livrei da maldição.</p>
+    <script>
+        let n1 = Number.parseInt(prompt('Digite o primeiro número'));
+        let n2 = parseInt(prompt('Digite o segundo número'));
+        let s = n1 + n2;
+        alert(`A soma entre ${n1} e ${n2} é igual a ${s}`);
+    </script>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    -- Aula 6 - Tratamento de Dados -- Parte 2
+
+Utilizando o "'identificador da variável'.length" ele te retorna quantas letras tem a string. Também podemos usar 
+o "'identificador da variável'.toUpperCase()" que transforma todas as letras da string em maiúsculas e o
+ "'identificador da variável'.toLowerCase()" que transforma todas as letras da string em minúsculas: 
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.`);
+        document.write(`Seu nome em maiúsculas fica ${nome.toUpperCase()}`);
+        document.write(`Seu nome em minúsculas fica ${nome.toLowerCase()}`);
+
+Da mesma forma que fizemos com string, podemos fazer com nuber e formatá-lo com o "'identificador da variável'.toFixed()":
+let n1 = 1543.5;
+n1.toFixed(2); //irá retornar n1 = 1545.50;
+
+E nele, digamos que n1 é o salário de alguém, como faria esse valor se tornar um valor financeiro? É só fazer dessa forma:
+        n1.toLocaleString('pt-br', {style: 'currency: 'BRL'}) // que retornará 'R$1,545,50'
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<IMPORTANTE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+O number, como padrão te retornará um ponto e não uma vírgula antes da casa decimal, para substituir o ponto pela vírgula, faça:
+n1.toFixed(2).replace('.' , ',');
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>estudoJS1</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let nome = prompt('Qual seu nome?');
+        document.write(`Olá, ${nome}! Seu nome tem ${nome.length} letras.`);
+        document.write(`Seu nome em maiúsculas fica ${nome.toUpperCase()}`);
+        document.write(`Seu nome em minúsculas fica ${nome.toLowerCase()}`);
+    </script>
+</body>
+</html>
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 7 - Operadores(Parte 1) --
+
+Os operadores tem várias famílias, mas iremos focar nas seguintes: aritméticos, atribuição, relacionais, lógicos e ternários.Nesta aula em específico iremos focar
+ em apenas dois, os aritméticos e os de atribuição.
+Começando pelos aritméticos, os que utilizamos em JavaScript são: +(soma), -(subtração), *(multiplicação), /(divisão), %(resto), **(ao quadrado).
