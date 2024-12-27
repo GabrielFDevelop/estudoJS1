@@ -329,4 +329,26 @@ Os lógicos no JavaScript são apenas três: !(negação), &&(conjunção ou e),
 
 Os ternários em JavaScript é composto por apenas dois símbolos que são utilizados em uma mesma expressão, que são: ?, :. Eles são chamados de ternários 
 por terem três partes:
-        teste ? true : false 
+        teste ? true : false
+
+-O teste é como ele mesmo diz, é um teste lógico que irá nos retornar algum resultado. 
+-O true é o que vai acontecer caso o teste lógico for verdadeiro.
+-O false é o que vai acontecer caso o teste lógico for falso.
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 9 - Introdução ao DOM --
+
+Nesta aula aprenderemos sobre o DOM. DOM é um acrônimo para Document Object Model, que basicamente é um conjunto de objetos dentro do navegador que vai dar acesso aos componentes internos do website. E algo que se deve 
+ aprender é a fazer a ávore DOM do seu site, que começa da raiz dentro do navegador que é chamada de window, significando que tudo que estamos fazendo em JavaScript está dentro desta window.
+Dentro da window temos vários outros objetos como location(que diz a localização do site), document(que é o documento atual), history(que basicamente seria o histórico) e vários outros.
+Nós também temos os elementos, que podemos selecionar através de métodos de acesso: por Marca, por ID, por Nome, por Classe, por Seletor.
+    -por Marca: getElementByTagName();
+    -por ID: getElementByID();
+    -por Nome: getElementByName();
+    -por Classe: getElementByClassName();
+    -por Seletor: querySelector() ou querySelectorAll();
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
