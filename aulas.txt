@@ -314,3 +314,19 @@ ________________________________________________________________________________
 Os operadores tem várias famílias, mas iremos focar nas seguintes: aritméticos, atribuição, relacionais, lógicos e ternários.Nesta aula em específico iremos focar
  em apenas dois, os aritméticos e os de atribuição.
 Começando pelos aritméticos, os que utilizamos em JavaScript são: +(soma), -(subtração), *(multiplicação), /(divisão), %(resto), **(ao quadrado).
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 8 - Operadores(Parte 2) --
+
+Nesta aula aprenderemos sobre os outros 3 operadores restantes: relacionais, lógicos e ternário.
+
+Os relacionais participam da grande maioria das linguagens de programação, por exemplo: >(maior), <(menor), >=(maior ou igual), <=(menor ou igual), ==(igual),
+ !=(diferente). Normalmente trabalhamos com eles de forma boolean, afirmando se sim(true) ou se não(false).
+
+Os lógicos no JavaScript são apenas três: !(negação), &&(conjunção ou e), ||(disjunção e ou). Normalmente trabalhamos com eles também de forma boolean, afirmando 
+ se sim(true) ou se não(false).
+
+Os ternários em JavaScript é composto por apenas dois símbolos que são utilizados em uma mesma expressão, que são: ?, :. Eles são chamados de ternários 
+por terem três partes:
+        teste ? true : false 
