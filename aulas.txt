@@ -349,6 +349,41 @@ Nós também temos os elementos, que podemos selecionar através de métodos de 
     -por Classe: getElementByClassName();
     -por Seletor: querySelector() ou querySelectorAll();
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Ao Utilizarmos o "querySelector()" com Classes usamos um '.' na div e se for um Id usamos um '#'.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body{
+            background: black;
+            color: aliceblue;
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">Clique em mim</div>
+    <script>
+        let corpo = window.document.body;
+        let p1 = document.getElementsByTagName('p')[1];
+        /*let d = document.getElementById('msg');
+        d.style.background = 'green';
+        d.innerText = 'Estou aguardando...';*/
+        let d = document.querySelector('div.msg');
+        d.style.color = 'blue';
+    </script>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
