@@ -3,35 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somando Números</title>
-    <style>
-        body{
-            font: normal 18pt Arial;
-        }
-        input{
-            font: normal 18pt Arial;
-            width: 100px;
-        }
-        div#res{
-            margin-top: 20px;
-        }
-    </style>
+    <title>DETRAN</title>
 </head>
 <body>
-    <h1>Somando Valores</h1>
-    <input type="number" name="txtn1" id="txtn1"> + 
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somar()">
-    <div id="res">Resultado</div>
+    <h1>Sistema de multas.</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
     <script>
-        function somar() {
-            let tn1 = document.getElementById('txtn1');
-            let tn2 = document.querySelector('input#txtn2');
+        function calcular() {
+            let txtv = document.querySelector('input#txtvel');
             let res = document.querySelector('div#res');
-            let n1 = Number(tn1.value);
-            let n2 = Number(tn2.value);
-            let s = n1 + n2;
-            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`;
+            let vel = Number(txtv.value);
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h</p></strong>`;
+            if(vel > 60){
+                res.innerHTML += `Você está <strong>multado</strong> por exesso de velocidade!`
+            }
+            res.innerHTML += `Dirija sempre usando cinto de segurança`;
         }
     </script>
 </body>

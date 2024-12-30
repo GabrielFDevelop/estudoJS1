@@ -500,3 +500,81 @@ Uma para realizarmos a soma: 's'.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 11 - Condições(Parte 1) --
+
+Nesta aula falaremos sobre condições em JavaScript. Mas antes falaremos sobre códigos sequenciais, seriam códigos que seguem um fluxo, no quais os comandos devem ser executados em uma ordem lógica, em sequência. Códigos 
+condicionais são códigos nos quais te apresentam 2 tipos de caminhos em um certo ponto, e podem continuar a execução após isso. Por exemplo: se acontecer isso, faça isso. Se não, faça aquilo. 
+Para representar essa condição utilizamos o 'if'(condição, que significaria 'se') e 'else'(que significaria 'se não'). Neste primeiro código faremos uma condição simples.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        CÓDIGO 1
+
+let vel = 78.2;
+console.log(`A velocidade do carro é ${vel}km/h`);
+if(vel > 60){
+    console.log(`Voce estava acima da velocidade permitida. MULTADO!`);
+}
+console.log(`Dirija sempre usando cinto de segurança`); 
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Agora faremos um código condicional composto.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+let pais = 'EUA';
+console.log(`Vivendo em ${pais}`);
+
+if(pais == 'Brasil'){
+    console.log(`Você é Brasileiro`);
+}else{
+    console.log(`Você é Estrangeiro`);
+};
+
+// let pais = 'EUA';
+// console.log(`Vivendo em ${pais}`);
+
+// if(pais != 'Brasil'){
+//     console.log(`Você é Estrangeiro`);
+// }else{
+//     console.log(`Você é Brasileiro`);
+// };
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+E agora ficaria assim com outro exemplo em forma de site:
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de multas.</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        function calcular() {
+            let txtv = document.querySelector('input#txtvel');
+            let res = document.querySelector('div#res');
+            let vel = Number(txtv.value);
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h</p></strong>`;
+            if(vel > 60){
+                res.innerHTML += `Você está <strong>multado</strong> por exesso de velocidade!`
+            }
+            res.innerHTML += `Dirija sempre usando cinto de segurança`;
+        }
+    </script>
+</body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
