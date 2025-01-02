@@ -547,7 +547,7 @@ if(pais == 'Brasil'){
 E agora ficaria assim com outro exemplo em forma de site:
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+ 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -576,5 +576,90 @@ E agora ficaria assim com outro exemplo em forma de site:
 </html>
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+    -- Aula 12 - Condições (Parte 2) --
+
+Nesta aula veremos sobre condições aninhadas, nas quais podemos colocar condições dentro de outras condições. Em condições aninhadas podemos utilizar o 'else if' no qual nos traz mais variedades de utilização de condições
+em JavaScript, e para utilizá-lo, será assim:
+
+if(cond1){
+    bloco 1;
+}else{
+    if(cond2){
+        bloco2;
+    }else{
+        bloco3;
+    }
+}
+
+Ou, simplificando, também podemos fazer assim:
+
+if(cond1){
+    bloco 1;
+}else if(cond2){
+    bloco2;
+}else{
+    bloco3;
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+    CÓDIGO 1
+
+let idade = 67;
+
+console.log(`Você tem ${idade} anos.`);
+
+if (idade < 16){
+    console.log(`Não vota.`);
+}else if(idade>=16 && idade<18 || idade>65){
+        console.log(`Voto opcional.`);
+}else{
+    console.log(`Voto obrigatório.`);
+}
+
+ou
+
+let agora = new Date();
+let hora = agora.getHours();
+
+if (hora >=6 && hora <12){
+    console.log(`Bom dia! Agora são exatamente ${hora} horas.`);
+}else if(hora >= 12 && hora<18){
+    console.log(`Boa tarde! Agora são exatamente ${hora} horas.`);
+}else if(hora >=18 && hora<24){
+    console.log(`Boa noite! Agora são exatamente ${hora} horas.`);
+}else if(hora >=0 && hora<6){
+    console.log(`É madrugada! Agora são exatamente ${hora} horas.`);
+}else{
+    console.log(`Hora ${hora} não existente.`);
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+E também temos as condições múltiplas, nas quais servem para valores fixos podendo nãosomente utilizar somente sim ou não. Nela, utilizamos o comando 'switch(expressão)' do JavaScript, assim:
+    switch(expressão){
+        case 'valor 1':     ;
+        break;
+        case 'valor 2':     ;
+        break;
+        case 'valor 3':     ;
+        break;
+        default:    ;
+        break;
+    }
+
+Neste comando 'switch', dentro de cada bloco preciso utilizar o comando 'break', pois ele vai ser desviado para o fim do fluxo, caso contrário, ele executará o fluxo inteiro antes de finaliza podendo te retornar valores
+ que não deseja..
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<IMPORTANTE>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Podemos declarar a hora atual do seu sistema operacional com 'new Date()'. E fazer a variável receber esta hora com "'variável'.getHours()". Ficaria assim:
+    let agora = new Date();
+    let hora = agora.getHours();
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________
